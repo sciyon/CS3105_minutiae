@@ -1,2 +1,2 @@
-# TaskTrack
-A simple project for my CS3105 class showing the capabilities of components and how rendering works using ReactJS.
+# Minutiae
+This is a repo containing all my homeworks for CIS 3105
