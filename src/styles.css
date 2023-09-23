@@ -1,0 +1,11 @@
+.container {
+  background-color: #383d3b;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.container .div {
+  background-color: #383d3b;
+}

@@ -1,0 +1,265 @@
+.task-list {
+  background-color: #545b58;
+  border-radius: 56px;
+  height: 371px;
+  position: relative;
+  width: 750px;
+}
+
+.task-list .text-wrapper-4 {
+  color: #eee5e9;
+  font-family: "Inter-SemiBold", Helvetica;
+  font-size: 50px;
+  font-weight: 600;
+  left: 39px;
+  letter-spacing: 0;
+  line-height: 100px;
+  position: absolute;
+  top: 17px;
+  white-space: nowrap;
+  width: 442px;
+}
+
+.task-list .p {
+  color: #eee5e9;
+  font-family: "Inter-SemiBold", Helvetica;
+  font-size: 15px;
+  font-weight: 600;
+  left: 39px;
+  letter-spacing: 0;
+  line-height: 15px;
+  position: absolute;
+  top: 103px;
+  width: 338px;
+}
+
+.task-list .task-area-instance {
+  left: 39px !important;
+  position: absolute !important;
+  top: 139px !important;
+}
+
+.task-list .design-component-instance-node {
+  background-image: url(./rectangle-16-2.svg) !important;
+  left: 18px !important;
+  position: absolute !important;
+  top: 16px !important;
+}
+
+.task-list .task-area-2 {
+  background-image: url(./rectangle-18-3.svg) !important;
+}
+
+.task-list .task-area-3 {
+  background-image: url(./rectangle-18-4.svg) !important;
+  left: 505px !important;
+  position: absolute !important;
+  top: 7px !important;
+}
+
+.task-list .task-area-4 {
+  background-image: url(./rectangle-16-3.svg) !important;
+  left: 18px !important;
+  position: absolute !important;
+  top: 102px !important;
+}
+
+.quote-box {
+  background-color: #545b58;
+  border-radius: 56px;
+  height: 337px;
+  position: relative;
+  width: 598px;
+}
+
+.quote-box .its-good-to-use {
+  color: #ffffff;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 36px;
+  font-weight: 400;
+  height: 132px;
+  left: 43px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 64px;
+  width: 512px;
+}
+
+.quote-box .text-wrapper {
+  color: #ffffff;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 36px;
+  font-weight: 400;
+  height: 44px;
+  left: 68px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: right;
+  top: 257px;
+  width: 487px;
+}
+
+.pomodoro {
+  background-image: url(./rectangle-3.png);
+  background-size: 100% 100%;
+  height: 484px;
+  position: relative;
+  width: 750px;
+}
+
+.pomodoro .div {
+  color: #eee5e9;
+  font-family: "Inter-SemiBold", Helvetica;
+  font-size: 50px;
+  font-weight: 600;
+  left: 42px;
+  letter-spacing: 0;
+  line-height: 100px;
+  position: absolute;
+  top: 18px;
+  white-space: nowrap;
+  width: 442px;
+}
+
+.pomodoro .p {
+  color: #eee5e9;
+  font-family: "Inter-SemiBold", Helvetica;
+  font-size: 15px;
+  font-weight: 600;
+  left: 42px;
+  letter-spacing: 0;
+  line-height: 15px;
+  position: absolute;
+  top: 104px;
+  width: 651px;
+}
+
+.pomodoro .text-wrapper-2 {
+  color: #eee5e9;
+  font-family: "Inter-SemiBold", Helvetica;
+  font-size: 140px;
+  font-weight: 600;
+  left: 42px;
+  letter-spacing: 0;
+  line-height: 100px;
+  position: absolute;
+  top: 178px;
+  white-space: nowrap;
+  width: 424px;
+}
+
+.pomodoro .time-buttons-instance {
+  left: 494px !important;
+  position: absolute !important;
+  top: 200px !important;
+}
+
+.pomodoro .time-start-instance {
+  left: 42px !important;
+  position: absolute !important;
+  top: 328px !important;
+}
+
+.task-list {
+  background-color: #545b58;
+  border-radius: 56px;
+  height: 371px;
+  position: relative;
+  width: 750px;
+}
+
+.task-list .text-wrapper-4 {
+  color: #eee5e9;
+  font-family: "Inter-SemiBold", Helvetica;
+  font-size: 50px;
+  font-weight: 600;
+  left: 39px;
+  letter-spacing: 0;
+  line-height: 100px;
+  position: absolute;
+  top: 17px;
+  white-space: nowrap;
+  width: 442px;
+}
+
+.task-list .p {
+  color: #eee5e9;
+  font-family: "Inter-SemiBold", Helvetica;
+  font-size: 15px;
+  font-weight: 600;
+  left: 39px;
+  letter-spacing: 0;
+  line-height: 15px;
+  position: absolute;
+  top: 103px;
+  width: 338px;
+}
+
+.task-list .task-area-instance {
+  left: 39px !important;
+  position: absolute !important;
+  top: 139px !important;
+}
+
+.task-list .design-component-instance-node {
+  background-image: url(./rectangle-16-2.svg) !important;
+  left: 18px !important;
+  position: absolute !important;
+  top: 16px !important;
+}
+
+.task-list .task-area-2 {
+  background-image: url(./rectangle-18-3.svg) !important;
+}
+
+.task-list .task-area-3 {
+  background-image: url(./rectangle-18-4.svg) !important;
+  left: 505px !important;
+  position: absolute !important;
+  top: 7px !important;
+}
+
+.task-list .task-area-4 {
+  background-image: url(./rectangle-16-3.svg) !important;
+  left: 18px !important;
+  position: absolute !important;
+  top: 102px !important;
+}
+
+.task-area {
+  background-color: #545b58;
+  border: 1px solid;
+  border-color: #eee5e9;
+  border-radius: 22px;
+  height: 207px;
+  position: relative;
+  width: 681px;
+}
+
+.task-area .add-task-area-instance {
+  background-image: url(./rectangle-16-2.svg) !important;
+  left: 18px !important;
+  position: absolute !important;
+  top: 16px !important;
+}
+
+.task-area .design-component-instance-node {
+  background-image: url(./rectangle-18-3.svg) !important;
+}
+
+.task-area .task-details-area-instance {
+  background-image: url(./rectangle-16-3.svg) !important;
+  left: 18px !important;
+  position: absolute !important;
+  top: 102px !important;
+}
+
+.task-area .task-details-area-2 {
+  background-image: url(./rectangle-18-4.svg) !important;
+  left: 505px !important;
+  position: absolute !important;
+  top: 7px !important;
+}
