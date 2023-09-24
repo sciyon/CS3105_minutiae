@@ -5,19 +5,27 @@
   border-color: #7c7c7c;
   height: 94px;
   position: relative;
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
 }
 
 .navbar .frame {
-  align-items: center;
   display: flex;
-  flex-wrap: wrap;
-  gap: 41px 41px;
-  height: 28px;
-  position: absolute;
-  right: 0;
-  top: 33px;
-  width: 508px;
+  gap: 20px; /* Adjust the gap as needed */
+  padding-right: 10rem;
 }
+
+.navbar ul{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 7rem;
+}
+
 
 .navbar .text-wrapper {
   color: #eee5e9;
@@ -26,22 +34,8 @@
   font-weight: 600;
   letter-spacing: 0;
   line-height: 28px;
-  margin-top: -1px;
-  position: relative;
-  text-align: right;
-  white-space: nowrap;
-  width: fit-content;
-}
-
-.navbar .div-wrapper {
-  align-items: center;
-  display: flex;
-  gap: 10px;
-  left: 25px;
-  padding: 10px 10px 10px 0px;
-  position: absolute;
-  top: 23px;
-  width: 268px;
+  text-decoration: none; /* Remove underline */
+  list-style: none; /* Remove bullets */
 }
 
 .navbar .div {
@@ -50,10 +44,5 @@
   font-size: 64px;
   font-weight: 600;
   letter-spacing: 0;
-  line-height: 28px;
-  margin-right: -10px;
-  margin-top: -1px;
-  position: relative;
   white-space: nowrap;
-  width: fit-content;
 }

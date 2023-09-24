@@ -1,11 +1,9 @@
-.container {
+* {
   background-color: #383d3b;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 100%;
+  height: auto;
+  width: auto;
 }
 
-.container .div {
-  background-color: #383d3b;
+body{
+  margin: 0;
 }
