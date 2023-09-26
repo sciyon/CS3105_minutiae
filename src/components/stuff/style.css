@@ -5,6 +5,7 @@
   border-radius: 56px;
   background: #555B59;
   margin: 2rem;
+  margin-right: 10rem;
 }
 
 .pomodoro-content{
@@ -26,7 +27,7 @@
   font-size: 60px;
 }
 
-.pomodoro-content h2{
+.time-box h2{
   margin-top: 20px;
   margin-right: 20px;
   margin-bottom: 10px;
@@ -61,14 +62,17 @@
   background: inherit;
   display: flex;
   align-items: center;
+  justify-content: center;
   width: fit-content;
-  padding: 0;
   margin-bottom: 10px;
 }
 
 .time-buttons{
+  padding-left: 3rem;
   background: inherit;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .plus-button {
@@ -226,4 +230,30 @@
   font-style: normal;
   font-weight: 500;
   line-height: 0px; /* 0% */
+}
+
+.clock-box{
+  outline: none;
+  user-select: none;
+  background: #545b58;
+  margin: 2rem;
+  width: 700px;
+  height: 150px;
+  border-radius: 56px;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+.clock{
+  color: #eee5e9;
+  background: #545b58;
+  font-family: "Inter-Bold", Helvetica;
+  font-size: 100px;
+  font-weight: 700;
+  letter-spacing: 0;
+  position: relative;
+  text-align: center;
+  width: fit-content;
+  height: fit-content;
 }
