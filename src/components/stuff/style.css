@@ -1,0 +1,230 @@
+.pomodoro{
+  outline: none;
+  user-select: none;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 56px;
+  background: #555B59;
+  margin: 2rem;
+}
+
+.pomodoro-content{
+  
+  width: 600px;
+  height: fit-content;
+  background: inherit;
+  border-radius: 56px;
+  padding: 1.5rem;
+}
+
+.pomodoro-content h1{
+  margin: 0;
+  background: inherit;
+  height: fit-content;
+  width: fit-content;
+  color: #eee5e9;
+  font-family: "Inter-SemiBold", Helvetica;
+  font-size: 50px;
+  width: 442px;
+}
+
+.pomodoro-content h2{
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  background: inherit;
+  display: inline-block;
+  width: min-content;
+  height: fit-content;
+  flex-shrink: 0;
+  color: #EEE5E9;  
+  font-family: "Inter-SemiBold", Helvetica;
+  font-size: 140px;
+  font-style: normal;
+  line-height: 100px; /* 71.429% */
+}
+
+.pomodoro-content p{
+  background: inherit;
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  flex-shrink: 0;
+  color: #EEE5E9;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 15px;
+  font-style: normal;
+  line-height: 15px; /* 100% */
+}
+
+
+.time-box{
+  background: inherit;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.time-buttons{
+  background: inherit;
+  display: flex;
+}
+
+.plus-button {
+  display: flex;
+  width: 80px;
+  height: fit-content;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 20px;
+  background: #EEE5E9;
+  margin-right: 20px;
+  outline: none;
+  user-select: none;
+  box-shadow: 7px 7px #999;
+}
+.minus-button {
+  display: flex;
+  width: 80px;
+  height: fit-content;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 20px;
+  background: #EEE5E9;
+  outline: none;
+  user-select: none;
+  margin-right: 0px;
+  box-shadow: 0 9px #999;
+  box-shadow: 7px 7px #999;
+}
+
+.minus-button:active {
+  background-color: #EEE5E9;
+  box-shadow: 5px 5px #999;
+  transform: translateY(4px);
+}
+.plus-button:active {
+  background-color: #EEE5E9;
+  box-shadow: 5px 5px #999;
+  transform: translateY(4px);
+}
+
+.sign{
+  display: flex;
+  width: min-content;
+  height: fit-content;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  font-family: "Inter-Regular", Helvetica;
+  color: inherit;
+  background: inherit;
+  text-align: center;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.control-btns{
+  padding-top: 20px;
+  display: flex;
+  background: none;
+  align-items: center;
+  width: fit-content;
+  padding: 0;
+  margin: 0;
+}
+
+.start{
+  align-items: center;
+  background-color: #d4ddba;
+  display: flex;
+  gap: 10px;
+  height: 40px;
+  justify-content: center;
+  width: 150px;
+  padding: 10px;
+  position: relative;
+  border-radius: 20px;
+  margin-right: 20px;
+  box-shadow: 7px 7px #878f72;
+}
+
+.pause{
+  align-items: center;
+  background-color: #e5c2c2;
+  display: flex;
+  gap: 10px;
+  height: 40px;
+  justify-content: center;
+  width: 150px;
+  padding: 10px;
+  position: relative;
+  border-radius: 20px;
+  margin-right: 20px;
+  box-shadow: 7px 7px #916d6d;
+}
+
+.resume{
+  align-items: center;
+  background-color: #d4ddba;
+  display: flex;
+  gap: 10px;
+  height: 40px;
+  justify-content: center;
+  width: 150px;
+  padding: 10px;
+  position: relative;
+  border-radius: 20px;
+  margin-right: 20px;
+  box-shadow: 7px 7px #878f72;
+}
+
+.reset{
+  align-items: center;
+  background-color: #d3d3d3;
+  display: flex;
+  gap: 10px;
+  height: 40px;
+  justify-content: center;
+  width: 150px;
+  padding: 10px;
+  position: relative;
+  border-radius: 20px;
+  margin-right: 20px;
+  box-shadow: 7px 7px #878787;
+}
+
+.start:active {
+  box-shadow: 5px 5px #878f72;
+  transform: translateY(4px);
+}
+.resume:active {
+  box-shadow: 5px 5px #878f72;
+  transform: translateY(4px);
+}
+.reset:active {
+  box-shadow: 5px 5px #878787;
+  transform: translateY(4px);
+}
+.pause:active {
+  box-shadow: 5px 5px #916d6d;
+  transform: translateY(4px);
+}
+
+.text{
+  color: #555B59;
+  font-family: "Inter-Medium", Helvetica;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 0px; /* 0% */
+}

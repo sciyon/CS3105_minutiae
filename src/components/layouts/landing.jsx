@@ -15,7 +15,8 @@ export default function Landing(){
             </span>
           </p>
           <p className="text">
-            <span className="text-wrapper">a website for Erwin’s CS 3105 homeworks</span>
+            <span className="text-wrapper">a website for Erwin’s CS 3105 homeworks
+            </span>
           </p>
         </div>
       </div>
