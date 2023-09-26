@@ -1,16 +1,15 @@
 .pomodoro{
   outline: none;
   user-select: none;
-  width: fit-content;
-  height: fit-content;
+  width: 600px;
   border-radius: 56px;
   background: #555B59;
   margin: 2rem;
 }
 
 .pomodoro-content{
-  
-  width: 600px;
+  padding:1rem;
+  width: 700px;
   height: fit-content;
   background: inherit;
   border-radius: 56px;
@@ -23,9 +22,8 @@
   height: fit-content;
   width: fit-content;
   color: #eee5e9;
-  font-family: "Inter-SemiBold", Helvetica;
-  font-size: 50px;
-  width: 442px;
+  font-family: "Inter-Bold", Helvetica;
+  font-size: 60px;
 }
 
 .pomodoro-content h2{
@@ -53,13 +51,13 @@
   flex-shrink: 0;
   color: #EEE5E9;
   font-family: "Inter-Regular", Helvetica;
-  font-size: 15px;
+  font-size: 20px;
   font-style: normal;
-  line-height: 15px; /* 100% */
 }
 
 
 .time-box{
+  margin-top: 20px;
   background: inherit;
   display: flex;
   align-items: center;
@@ -134,6 +132,7 @@
 }
 
 .control-btns{
+  margin-top: 20px;
   padding-top: 20px;
   display: flex;
   background: none;
