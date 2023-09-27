@@ -1,20 +1,24 @@
 .pomodoro{
   outline: none;
   user-select: none;
-  width: 600px;
+  width: 90%;
+  height: 100%;
   border-radius: 56px;
   background: #555B59;
-  margin: 2rem;
-  margin-right: 10rem;
+  margin: 1rem;
+  margin-right: 0;
+  display: flex;
+  justify-content: left;
+  align-items: center;
 }
 
 .pomodoro-content{
   padding:1rem;
-  width: 700px;
-  height: fit-content;
   background: inherit;
   border-radius: 56px;
-  padding: 1.5rem;
+  margin: 2rem;
+  justify-content: center;
+  align-items: center;
 }
 
 .pomodoro-content h1{
@@ -64,7 +68,7 @@
   align-items: center;
   justify-content: center;
   width: fit-content;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .time-buttons{
@@ -137,7 +141,6 @@
 
 .control-btns{
   margin-top: 20px;
-  padding-top: 20px;
   display: flex;
   background: none;
   align-items: center;
@@ -232,28 +235,91 @@
   line-height: 0px; /* 0% */
 }
 
-.clock-box{
-  outline: none;
-  user-select: none;
-  background: #545b58;
-  margin: 2rem;
-  width: 700px;
-  height: 150px;
+.clock-boxx {
+  margin: 1rem;
   border-radius: 56px;
+  background: #545b58;
+  width: 90%;
+  height: 300px;
   display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.clock{
+.clock {
   color: #eee5e9;
   background: #545b58;
-  font-family: "Inter-Bold", Helvetica;
-  font-size: 100px;
-  font-weight: 700;
-  letter-spacing: 0;
-  position: relative;
   text-align: center;
-  width: fit-content;
+}
+
+.time{
+  display: inline;
+  font-size: 120px;
+  font-weight: 800;
+  letter-spacing: 0;
+  font-family: "Inter-Bold", Helvetica;
+  background: #545b58;
+  width: fit-content  ;
+}
+
+
+.quote-box{ 
+  margin: 1rem;
+  margin-top: 0;
+  border-radius: 56px;
+  background: #545b58;
+  width: 90%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.quote {
+  width: 80%;
+  font-style: italic;
+  background: #545b58;
+  align-items: center;
+}
+
+.quote p{
+  color: #eee5e9;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 36px;
+  font-weight: 400;
   height: fit-content;
+  background: #545b58;
+  text-align: center;
+}
+
+.quote h3{
+  color: #eee5e9;
+  background: #545b58;
+  text-align: right;
+  font-family: "Inter-Bold", Helvetica;
+  font-size: 36px;
+  font-weight: 400;
+  height: 44px;
+}
+
+.image-box{
+  margin: 1rem;
+  margin-top: 0;
+  margin-right: 0;
+  border-radius: 56px;
+  background: #545b58;
+  width: 90%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.image-box img{
+  width: 80%;
+  height: 80%;
 }

@@ -5,7 +5,7 @@
   border-bottom-style: solid;
   border-bottom-width: 1px;
   border-color: #7c7c7c;
-  height: 94px;
+  height: fit-content;
   position: relative;
   width: auto;
   display: flex;

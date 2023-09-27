@@ -47,3 +47,31 @@
   font-weight: 600;
   line-height: 10px;
 }
+
+.col-main{
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.column-items {
+  height: 100%;
+  width: 100%;
+}
+.clock-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.quote-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.pomodoro-container, .meme-container{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; 
+  justify-content: center;
+}

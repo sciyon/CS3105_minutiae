@@ -7,15 +7,18 @@ export default function ClockBox() {
   useEffect(() => {
     const intervalId = setInterval(() => {
       setCurrentTime(new Date());
-    }, 1000); 
+    }, 1000);
+
     return () => clearInterval(intervalId);
   }, []);
 
-  const formattedTime = currentTime.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+  const formattedTime = currentTime.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', hour12: true });
 
   return (
-    <div className='clock-box'>
-      <div className='clock'>{formattedTime}</div>
+    <div className='clock-boxx'>
+      <div className='clock'>
+        <span className="time">{formattedTime}</span>
+      </div>
     </div>
   );
 }
