@@ -5,7 +5,7 @@ import "./style.css";
 export default function Navbar(){
   return (
     <nav className="navbar">
-      <a to="/" className="div">minutiae</a>
+      <ul><CustomLink to="/" className="title">minutiae</CustomLink></ul>
       <div className="frame">
         <ul>
           <CustomLink to="/" className="text-wrapper">home</CustomLink>
