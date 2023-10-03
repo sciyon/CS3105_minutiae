@@ -41,7 +41,14 @@ export const formSchema = Yup.object().shape({
         .positive("Age must be positive")
         .max(100, "Age must be a valid age")
         .min(7, "Age is too low")
-        .required("Age is required"),
+        .required("Age is required")
+        .test('is-age-valid', 'Age does not match with birthdate', function (value) {
+          const { birthdate } = this.parent;
+          const birthYear = new Date(birthdate).getFullYear();
+          const currentYear = new Date().getFullYear();
+          const calculatedAge = currentYear - birthYear;
+          return calculatedAge === value;
+        }),
   email:
     Yup .string()
         .email("Invalid email")

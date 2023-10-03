@@ -329,3 +329,68 @@
   width: 80%;
   height: 80%;
 }
+
+.field-label{
+  font-family: "Inter-Regular", Helvetica;
+  color: #eee5e9;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.error-msg{
+  color: #fc1c6e;
+  font-size: 15px;
+  font-weight: 100;
+  font-family: "Inter-Light", Helvetica;
+  padding-bottom: 1rem;
+}
+
+.field-input{
+  border: 1px solid #eee5e9;
+  height: 2rem;
+  color: #eee5e9;
+  width: 80%;
+}
+
+.formik-form{
+  display: flex;
+}
+
+.display-as-row{
+  display: flex;
+}
+
+.display-as-col{
+  padding-left: 1rem;
+}
+.field{
+  flex: 1;
+}
+
+.submit-btn{
+  align-items: center;
+  background-color: #d3d3d3;
+  display: flex;
+  gap: 10px;
+  height: 40px;
+  justify-content: center;
+  width: 150px;
+  padding: 10px;
+  position: relative;
+  border-radius: 20px;
+  margin-right: 20px;
+  box-shadow: 7px 7px #878787;
+  border-radius: 20px;
+  margin-right: 20px;
+  box-shadow: 7px 7px #878787;
+}
+
+.submit-btn:active {
+  box-shadow: 5px 5px #878f72;
+  transform: translateY(4px);
+}
+
+.field-input-essay{
+  width: 20rem;
+  height: 18rem;
+}
