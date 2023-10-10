@@ -2,12 +2,13 @@ import React from "react";
 import { Formik, Field, Form } from 'formik';
 import "./style.css";
 import { formSchema } from "../../validation/formValidation";
-import ShimmerField from "./ShimmerField";
+import ShimmerField from "../shimmerfields/shimmerField";
+import ShimmerField2 from "../shimmerfields/shimmerField2";
 
 
-export default function FormsBox(){
+export default function FormsBox({ setFormData, setImageUrl}){
   const [isSubmitting, setIsSubmitting] = React.useState(false);
-
+  const inputFile = React.useRef();
 
   function formatDate(date) {
     var d = new Date(date),
@@ -33,7 +34,7 @@ export default function FormsBox(){
           gender: '',
           about: '',
           civilStatus: '',
-          birthdate: formatDate(new Date()),
+          birthdate: '2000-01-01',
           age: '',
           email: '',
           phoneNumber: '',
@@ -42,31 +43,34 @@ export default function FormsBox(){
 
         validationSchema = {formSchema}
 
-        onSubmit={values => {
+        onSubmit={(values, props) => {
           setIsSubmitting(true);
           console.log(values);
+        
           setTimeout(() => {
             setIsSubmitting(false);
-          }, 5000);
+            setFormData(values);
+            setImageUrl(URL.createObjectURL(values.photo));
+          }, 3000);
         }}
       >
         {({ errors, touched }) => (
           <Form>
             <div className="display-as-row">
               <div className="field">
-                <div className="field-label">First Name</div>
+                <div className="field-label">first name</div>
                 {isSubmitting ? <ShimmerField /> : <Field className="field-input" name='fname'/>}
                 {errors.fname && touched.fname ? (<div className="error-msg">{errors.fname}</div>) : null}
               </div>
               <div className="field">
-                <div className="field-label">Last Name</div>
+                <div className="field-label">last name</div>
                 {isSubmitting ? <ShimmerField /> : <Field className="field-input" name='lname'/>}
                 {errors.lname && touched.lname ? (<div className="error-msg">{errors.lname}</div>) : null}
               </div>
             </div>
             <div className="display-as-row">
               <div className="field">
-                <div className="field-label">Civil status</div>
+                <div className="field-label">civil status</div>
                 {isSubmitting ? <ShimmerField /> : (
                   <Field  className="field-input"  name='civilStatus' as='select'>
                     <option value="">Select...</option>
@@ -79,7 +83,7 @@ export default function FormsBox(){
                 {errors.civilStatus && touched.civilStatus ? (<div className="error-msg">{errors.civilStatus}</div>) : null}
               </div>
               <div className="field">
-                <div className="field-label">Gender</div>
+                <div className="field-label">gender</div>
                 {isSubmitting ? <ShimmerField /> : (
                   <Field  className="field-input"  name='gender' as='select'>
                     <option value="">Select...</option>
@@ -94,38 +98,43 @@ export default function FormsBox(){
             <div className="display-as-row">
 
               <div className="field">
-                <div className="field-label">Describe yourself</div>
+                <div className="field-label">describe yourself</div>
                 {isSubmitting ? <ShimmerField /> : <Field  className="field-input-essay" name='about' as='textarea'/>}
                 {errors.about && touched.about ? (<div className="error-msg">{errors.about}</div>) : null}
               </div>
               <div className="display-as-col">
                 <div className="display-as-row">
                   <div className="field">
-                    <div className="field-label">Birth date</div>
-                    {isSubmitting ? <ShimmerField /> : <Field  className="field-input" name="birthdate" type="date" />}
+                    <div className="field-label">birth date</div>
+                    {isSubmitting ? <ShimmerField2 /> : 
+                      <Field  
+                        className="field-input" 
+                        name="birthdate" 
+                        type="date"  
+                      />}
                     {errors.birthdate && touched.birthdate ? (<div className="error-msg">{errors.birthdate}</div>) : null}
                   </div>
                   <div className="field">
-                    <div className="field-label">Age</div>
-                    {isSubmitting ? <ShimmerField /> : <Field className="field-input"  name='age' type='number'/>}
+                    <div className="field-label">age</div>
+                    {isSubmitting ? <ShimmerField2 /> : <Field className="field-input"  name='age'/>}
                     {errors.age && touched.age ? (<div className="error-msg">{errors.age}</div>) : null}
                   </div>
                 </div>
                   <div className="display-as-row">
                     <div className="field">
-                      <div className="field-label">Email address</div>
-                      {isSubmitting ? <ShimmerField /> : <Field  className="field-input" name='email' type="email"/>}
+                      <div className="field-label">email address</div>
+                      {isSubmitting ? <ShimmerField2 /> : <Field  className="field-input" name='email' type="email"/>}
                       {errors.email && touched.email ? (<div className="error-msg">{errors.email}</div>) : null}
                     </div>
                     <div className="field">
-                      <div className="field-label">Phone number</div>
-                      {isSubmitting ? <ShimmerField /> : <Field  className="field-input" name='phoneNumber'/>}
+                      <div className="field-label">phone number</div>
+                      {isSubmitting ? <ShimmerField2 /> : <Field  className="field-input" name='phoneNumber'/>}
                       {errors.phoneNumber && touched.phoneNumber ? (<div className="error-msg">{errors.phoneNumber}</div>) : null}
                     </div>
                   </div>
                     <div className="field">
-                      <div className="field-label">Upload 2x2 photo</div>
-                      {isSubmitting ? <ShimmerField /> : (
+                      <div className="field-label">upload 2x2 photo</div>
+                      {isSubmitting ? <ShimmerField2 /> : (
                         <Field  className="field-input" name='photo'>
                           {({ field, form }) => (
                             <input

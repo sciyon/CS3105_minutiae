@@ -77,14 +77,25 @@
 }
 
 .forms-container{
-  width: 100%;
-  height: 100%;
   display: flex;
+  padding:  2rem;
+  gap: 2rem;
 }
 
-.left-col, .right-col{
+.left-col{
   width: 50%;
   height: 100%;
+  background-color: #555B59;
+  padding: 1rem;
+  border-radius: 56px;
+}
+
+.right-col{
+  width: fit-content;
+  height: 100%;
+  background-color: #555B59;
+  padding: 2rem;
+  border-radius: 56px;
 }
 
 .required{
@@ -99,4 +110,84 @@
 
 .form-field{
   padding: .5rem;
+}
+
+.photo {
+  background-color: inherit;
+  width: 400px; /* Set a fixed width */
+  height: 400px; /* Set a fixed height */
+  overflow: hidden; /* Hide any overflow */
+  border-radius: 56px;
+}
+
+.photo img {
+  max-width: 100%; /* Make the image responsive within the container */
+  max-height: 100%; /* Make the image responsive within the container */
+  display: block; /* Remove any extra space beneath the image */
+}
+
+.left-col-row1, .left-col-row2{
+  padding: 1rem;
+}
+
+h1{
+  background-color: inherit;
+  font-family: "Inter-SemiBold", Helvetica;
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 10px;
+}
+
+.left-col-row1{
+  display: flex;
+  background-color: inherit;
+}
+
+.lcr1-col2{
+  padding-left: 2rem;
+  background-color: inherit;
+}
+
+.displayFlex{
+  display: flex;
+  gap: 10px;
+  background-color: inherit;
+}
+
+.left-col-row2{
+  display: flex;
+  gap: 2rem;
+  padding-bottom: 2rem;
+  background-color: inherit;
+}
+
+.lcr2-col1{
+  width: 400px;
+  background-color: inherit;
+}
+
+.lcr1-col1,.lcr1-col2-rows{
+  background-color: inherit;
+}
+
+.fname, .lname,.gender,.civilStatus,.age,.birthdate,.email,.phone, .about{
+  background-color: inherit;
+  color: #eee5e9;
+  font-family: "Inter-SemiBold", Helvetica;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.left-col h2{ 
+  padding-left: 1rem;
+  padding-top: 1rem;
+  background-color: inherit;
+  font-family: "Inter-SemiBold", Helvetica;
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 10px;
+}
+
+.lcr2-col2{
+  background-color: inherit;
 }

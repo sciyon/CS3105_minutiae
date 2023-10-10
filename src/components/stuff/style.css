@@ -331,40 +331,62 @@
 }
 
 .field-label{
-  font-family: "Inter-Regular", Helvetica;
-  color: #eee5e9;
-  font-size: 20px;
-  font-weight: 300;
+  font-family: "Inter-SemiBold", Helvetica;
+  color: black;
+  font-size: 30px;
+  font-weight: 600;
+  background-color: inherit;
 }
 
 .error-msg{
   color: #fc1c6e;
   font-size: 15px;
   font-weight: 100;
+  background-color: #555B59;
   font-family: "Inter-Light", Helvetica;
-  padding-bottom: 1rem;
+  background-color: inherit;
 }
 
-.field-input{
+.field-input, .field-input-essay{
   border: 1px solid #eee5e9;
+  font-family: "Inter-SemiBold", Helvetica;
+  font-size: 20px;
+  font-weight: 300;
   height: 2rem;
   color: #eee5e9;
-  width: 80%;
+  width: 100%;
+  background-color: inherit;
 }
 
 .formik-form{
+  background-color: #555B59;
   display: flex;
+  width: fit-content;
 }
 
 .display-as-row{
   display: flex;
+  height: fit-content;
+  background-color: #555B59;
 }
 
 .display-as-col{
-  padding-left: 1rem;
+  padding: 1rem;
+  background-color: #555B59;
 }
+
 .field{
   flex: 1;
+  padding: 15px;
+  width: fit-content;
+  height: fit-content;
+  background-color: #555B59;
+}
+
+.shimmerfield{
+  background-color: #555B59;
+  width: 499px;
+  height: 89px;
 }
 
 .submit-btn{
@@ -392,5 +414,6 @@
 
 .field-input-essay{
   width: 20rem;
-  height: 18rem;
+  height: 20rem;
+  background-color: inherit;
 }

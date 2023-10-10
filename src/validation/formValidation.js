@@ -23,7 +23,7 @@ export const formSchema = Yup.object().shape({
   gender: 
     Yup .string()
         .oneOf(["Male", "Female", "Other"], "Invalid gender")
-        .required("Required"),
+        .required("Gender is required"),
   about:
     Yup .string()
         .min(20, "About you is too short")
