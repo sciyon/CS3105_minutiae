@@ -9,7 +9,7 @@ export default function FormsAct(){
     gender: '',
     about: '',
     civilStatus: '',
-    birthdate: '2000-01-01',
+    birthdate: '',
     age: '',
     email: '',
     phoneNumber: '',
@@ -45,7 +45,7 @@ export default function FormsAct(){
               </div>
           </div>
           <div className="lcr1-col2-rows">
-            <h1>age & bdate</h1>
+            <h1>age & birthdate</h1>
               <div className="displayFlex">
                 <div className="age">{formData.age}</div>
                 <div className="birthdate">{formData.birthdate}</div>

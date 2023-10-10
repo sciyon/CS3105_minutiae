@@ -43,7 +43,7 @@ export default function FormsBox({ setFormData, setImageUrl}){
 
         validationSchema = {formSchema}
 
-        onSubmit={(values, props) => {
+        onSubmit={(values, { resetForm }) => {
           setIsSubmitting(true);
           console.log(values);
         
@@ -51,6 +51,7 @@ export default function FormsBox({ setFormData, setImageUrl}){
             setIsSubmitting(false);
             setFormData(values);
             setImageUrl(URL.createObjectURL(values.photo));
+            resetForm();
           }, 3000);
         }}
       >
